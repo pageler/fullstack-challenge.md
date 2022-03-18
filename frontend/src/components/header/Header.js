@@ -66,7 +66,7 @@ export default function SearchAppBar({ setSearch }) {
                                 display: { sm: "block" },
                             }}
                         >
-                            <Link to="/contacts" style={{ color: "white" }}>
+                            <Link to="/" style={{ color: "white" }}>
                                 Contact List
                             </Link>
                         </Typography>
