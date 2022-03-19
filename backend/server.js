@@ -26,6 +26,7 @@ if (process.env.NODE_ENV === "production") {
         );
     });
 } else {
+    // Route used for development only and moved to production:
     app.get("/", (req, res) => {
         res.send("API is listening of PORT 5000");
     });
