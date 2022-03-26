@@ -13,6 +13,7 @@ const registerUser = asyncHandler(async (req, res) => {
         throw new Error("User already exists, please Login");
     }
 
+    // Create new user in database:
     const user = await User.create({
         firstName,
         lastName,

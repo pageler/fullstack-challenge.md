@@ -46,9 +46,11 @@ const RegisterPage = () => {
     return (
         <MainPage title="REGISTER">
             <div className="loginContainer">
-                {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+                {error && (
+                    <ErrorMessage severity="danger">{error}</ErrorMessage>
+                )}
                 {message && (
-                    <ErrorMessage variant="danger">{message}</ErrorMessage>
+                    <ErrorMessage severity="danger">{message}</ErrorMessage>
                 )}
                 {loading && <Loading />}
                 <form onSubmit={submitHandler}>

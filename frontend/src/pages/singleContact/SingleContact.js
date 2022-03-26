@@ -98,13 +98,15 @@ function SingleContact() {
                     <form onSubmit={updateHandler}>
                         {loadingDelete && <Loading />}
                         {errorDelete && (
-                            <ErrorMessage variant="danger">
+                            <ErrorMessage severity="danger">
                                 {errorDelete}
                             </ErrorMessage>
                         )}
 
                         {error && (
-                            <ErrorMessage variant="error">{error}</ErrorMessage>
+                            <ErrorMessage severity="error">
+                                {error}
+                            </ErrorMessage>
                         )}
                         <Box
                             sx={{

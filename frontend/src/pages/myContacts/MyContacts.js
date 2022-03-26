@@ -92,9 +92,9 @@ const MyContacts = ({ search }) => {
                     Logout to Home Page
                 </Button>
             </Link>
-            {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+            {error && <ErrorMessage severity="danger">{error}</ErrorMessage>}
             {errorDelete && (
-                <ErrorMessage variant="danger">{errorDelete}</ErrorMessage>
+                <ErrorMessage severity="danger">{errorDelete}</ErrorMessage>
             )}
 
             {loading && <Loading />}

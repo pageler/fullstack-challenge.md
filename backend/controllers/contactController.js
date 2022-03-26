@@ -22,8 +22,7 @@ const createContact = asyncHandler(async (req, res) => {
             phoneNumber,
             age,
         });
-        const createContact = await contact.save();
-        res.status(201).json(createContact);
+        const createContact = await contact.save(); // Saved to database
     }
 });
 

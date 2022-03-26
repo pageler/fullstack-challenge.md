@@ -19,10 +19,12 @@ const reducer = combineReducers({
     contactDelete: contactDeleteReducer,
 });
 
+// Fetch contacts from localStorage and parse to objects:
 const userInfoFormStorage = localStorage.getItem("userInfo")
     ? JSON.parse(localStorage.getItem("userInfo"))
     : null;
 
+// Pass contact objects to initialState:
 const initialState = {
     userLogin: { userInfo: userInfoFormStorage },
 };

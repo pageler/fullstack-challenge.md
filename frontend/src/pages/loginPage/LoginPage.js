@@ -37,7 +37,9 @@ const LoginPage = () => {
     return (
         <MainPage title="LOGIN">
             <div className="loginContainer">
-                {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+                {error && (
+                    <ErrorMessage severity="danger">{error}</ErrorMessage>
+                )}
                 {loading && <Loading />}
                 <form onSubmit={submitHandler}>
                     <Box
